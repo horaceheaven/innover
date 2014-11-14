@@ -11,15 +11,17 @@ jQuery(document).ready(function($){'use strict';
 	    filter: ':not(.no-scroll)'
 	});
 
+	$('#learnmore').smoothScroll();
+
 	var stickyNavTop = $('#masthead').offset().top;
 
    	var stickyNav = function(){
 	    var scrollTop = $(window).scrollTop();
 
-	    if (scrollTop > stickyNavTop) { 
+	    if (scrollTop > stickyNavTop) {
 	        $('#masthead').addClass('sticky');
 	    } else {
-	        $('#masthead').removeClass('sticky'); 
+	        $('#masthead').removeClass('sticky');
 	    }
 	};
 
