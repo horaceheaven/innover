@@ -2,16 +2,13 @@
 
 jQuery(document).ready(function($){'use strict';
 
-	$('.nav.navbar-nav').onePageNav({
-		currentClass: 'active',
-	    changeHash: false,
-	    scrollSpeed: 900,
-	    scrollOffset: 60,
-	    scrollThreshold: 0.3,
-	    filter: ':not(.no-scroll)'
+	$('#menu-item').smoothScroll({
+		speed: 400,
 	});
 
-	$('#learnmore').smoothScroll();
+	$('#learnmore').smoothScroll({
+		speed: 400,
+	});
 
 	var stickyNavTop = $('#masthead').offset().top;
 
