@@ -6,10 +6,6 @@ jQuery(document).ready(function($){'use strict';
 		speed: 400,
 	});
 
-	$('#learnmore').smoothScroll({
-		speed: 400,
-	});
-
 	var stickyNavTop = $('#masthead').offset().top;
 
    	var stickyNav = function(){

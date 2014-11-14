@@ -15,6 +15,11 @@
     <script type='text/javascript' src='components/jquery.js'></script>
     <script type='text/javascript' src='components/jquery-migrate.min.js'></script>
     <style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
   </head>
   <body class="page page-id-155 page-template-default">
     <div id="page" class="hfeed site">
@@ -45,7 +50,7 @@
         <div class="page-fullwdth-content">
 
 
-<form class="form-horizontal">
+<form class="form-horizontal col-sm-10"  role="form">
 <fieldset>
 
 <!-- Form Name -->
@@ -55,27 +60,26 @@
 <div class="control-group">
   <label class="control-label" for="name">Name</label>
   <div class="controls">
-    <input id="name" name="name" type="text" placeholder="First &amp; Last Name" class="input-xlarge" required="">
+    <input id="name" name="name" type="text" placeholder="Full Name" class="input-xlarge form-control" required="">
 
   </div>
 </div>
 
 <!-- Multiple Checkboxes -->
 <div class="control-group">
-  <label class="control-label" for="anon"></label>
   <div class="controls">
     <label class="checkbox" for="anon-0">
       <input type="checkbox" name="anon" id="anon-0" value="Anonymous">
-      Anonymous
+      I prefer to appear Anonymous in the system
     </label>
   </div>
 </div>
-
+<br/>
 <!-- Text input-->
 <div class="control-group">
   <label class="control-label" for="email">Email</label>
   <div class="controls">
-    <input id="email" name="email" type="text" placeholder="Email" class="input-xlarge">
+    <input id="email" name="email" type="text" placeholder="Email" class="input-xlarge  form-control">
 
   </div>
 </div>
@@ -84,7 +88,7 @@
 <div class="control-group">
   <label class="control-label" for="address">Address</label>
   <div class="controls">
-    <input id="address" name="address" type="text" placeholder="Address" class="input-xlarge" required="">
+    <input id="address" name="address" type="text" placeholder="Address" class="input-xlarge  form-control" required="">
 
   </div>
 </div>
@@ -93,11 +97,12 @@
 <div class="control-group">
   <label class="control-label" for="occupation">Occupation</label>
   <div class="controls">
-    <select id="occupation" name="occupation" class="input-xlarge">
+    <!--<select id="occupation" name="occupation" class="input-xlarge">
       <option>Account Collector</option>
       <option>Accounting Specialist</option>
       <option>Adjustment Clerk</option>
-    </select>
+    </select>-->
+    <input placeholder="Occupation" class=" form-control" type="text"/>
   </div>
 </div>
 
@@ -105,7 +110,7 @@
 <div class="control-group">
   <label class="control-label" for="phonenumber">Phone</label>
   <div class="controls">
-    <input id="phonenumber" name="phonenumber" type="text" placeholder="Phone" class="input-xlarge">
+    <input id="phonenumber" name="phonenumber" type="text" placeholder="Phone" class="input-xlarge form-control">
 
   </div>
 </div>
@@ -114,7 +119,7 @@
 <div class="control-group">
   <label class="control-label" for="next"></label>
   <div class="controls">
-    <a id="next" name="next" class="btn btn-primary" href="/appointment.html">Next &gt;</a>
+    <a id="next" name="next" class="btn btn-primary  pull-right" href="/appointment.html">Next <span class="glyphicon glyphicon-chevron-right"</span></a>
   </div>
 </div>
 

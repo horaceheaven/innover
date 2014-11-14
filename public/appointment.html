@@ -15,6 +15,12 @@
     <script type='text/javascript' src='components/jquery.js'></script>
     <script type='text/javascript' src='components/jquery-migrate.min.js'></script>
     <style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+
   </head>
   <body class="page page-id-155 page-template-default">
     <div id="page" class="hfeed site">
@@ -45,7 +51,7 @@
         <div class="page-fullwdth-content">
 
 
-                        <form class="form-horizontal">
+                        <form class="form-horizontal  col-sm-10">
 <fieldset>
 
 <!-- Form Name -->
@@ -56,9 +62,9 @@
   <label class="control-label" for="preference"></label>
   <div class="controls">
     <label class="radio" for="preference-0">
-      <input type="radio" name="preference" id="preference-0" value="I would like to see a particular Doctor." checked="checked">
-      I would like to see a particular Doctor.
-    </label>
+      <input type="radio" name="preference" id="preference-0" value="I would like to see a particular Therapist:" checked="checked">
+      I would like to see a particular Therapist: <input type="text" style="width:400px; display:inline-block" class="form-control" placeholder="Enter Therapist Name"/>
+    </label><br/>
     <label class="radio" for="preference-1">
       <input type="radio" name="preference" id="preference-1" value="I have no preference. I want a session now.">
       I have no preference. I want a session now.
@@ -66,21 +72,29 @@
   </div>
 </div>
 
+<br/><br/>
+
 <!-- Select Basic -->
 <div class="control-group">
   <label class="control-label" for="day">Select Day</label>
   <div class="controls">
-    <select id="day" name="day" class="input-xlarge">
+    <select id="day" name="day" class="input-xlarge form-control">
       <option>Today</option>
+      <option>Sat 11/14</option>
+      <option>Sun 11/15</option>
+      <option>Mon 11/16</option>
+      <option>Tue 11/17</option>
+      <option>Thu 11/18</option>
+      <option>Fri 11/19</option>
     </select>
   </div>
 </div>
 
 <!-- Multiple Radios -->
-<div class="control-group">
   <label class="control-label" for="times">Choose from available times:</label>
-  <div class="controls">
-    <label class="radio" for="times-0">
+  <div class="row">
+    <div class="col-md-4">
+      <label class="radio" for="times-0">
       <input type="radio" name="times" id="times-0" value="1pm - 2pm" checked="checked">
       1pm - 2pm
     </label>
@@ -96,6 +110,8 @@
       <input type="radio" name="times" id="times-3" value="4pm - 5pm">
       4pm - 5pm
     </label>
+  </div>
+  <div class="col-md-4">
     <label class="radio" for="times-4">
       <input type="radio" name="times" id="times-4" value="5pm - 6pm">
       5pm - 6pm
@@ -112,9 +128,12 @@
       <input type="radio" name="times" id="times-7" value="8pm - 9pm">
       8pm - 9pm
     </label>
+
+  </div>
+  <div class="col-md-4">
     <label class="radio" for="times-8">
-      <input type="radio" name="times" id="times-8" value="4pm - 5pm">
-      4pm - 5pm
+      <input type="radio" name="times" id="times-8" value="9pm - 10pm">
+      9pm - 10pm
     </label>
     <label class="radio" for="times-9">
       <input type="radio" name="times" id="times-9" value="10pm -11pm">
@@ -122,12 +141,37 @@
     </label>
   </div>
 </div>
-
-<a id="button1id" class="btn btn-success" href="/index.html">Schedule</a>
+<br/>
+<a id="button1id" class="btn btn-lg btn-success" data-toggle="modal" data-target="#myModal">Schedule Appointment &nbsp;&nbsp;<span class="glyphicon glyphicon-calendar"></div></a>
 
 </fieldset>
 </form>
 
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">You're appointment was booked!</h4>
+
+      </div>
+      <div class="modal-body">
+        We will email you the details on how to access the live session to your inbox;
+      </div>
+<div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Back to Home</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  jQuery('#myModal').on('hidden.bs.modal', function () {
+    window.location.href = '/index.html';
+})
+</script>
         </div>
         <!-- .page-fullwdth-content -->
       </div>

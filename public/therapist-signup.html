@@ -15,6 +15,12 @@
     <script type='text/javascript' src='components/jquery.js'></script>
     <script type='text/javascript' src='components/jquery-migrate.min.js'></script>
     <style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+
   </head>
   <body class="page page-id-155 page-template-default">
     <div id="page" class="hfeed site">
@@ -35,7 +41,7 @@
               <ul id="menu-main-menu" class="nav navbar-nav">
                 <li id="menu-item-183" class=" menu-item menu-item-type-post_type menu-item-object-page"><a id="menu-item" href="/">Home</a></li>
                 <li id="menu-item-190" class=" menu-item menu-item-type-post_type menu-item-object-page"><a id="menu-item" href="/therapist.html">Are you a Therapist?</a></li>
-                <li id="menu-item-204" class=" menu-item menu-item-type-post_type menu-item-object-page"><a id="menu-item" href="#team">Team</a></li>
+                <!--<li id="menu-item-204" class=" menu-item menu-item-type-post_type menu-item-object-page"><a id="menu-item" href="#team">Team</a></li>-->
               </ul>
             </div>
           </div>
@@ -43,45 +49,35 @@
       </header>
       <!--/#header-->
       <div class="page-fullwdth-content">
-        <br /><br />
-        <form class="form-horizontal" action="/therapist.html">
-          <fieldset>
-            <!-- Form Name -->
-            <legend class="title-area">Therapist Signup</legend>
-            <!-- Text input-->
-            <div class="control-group">
-              <label class="control-label" for="firstname">First Name</label>
-              <div class="controls">
-                <input id="firstname" name="firstname" type="text" placeholder="placeholder" class="input-large" required>
-              </div>
+
+
+        <form class="form-horizontal col-sm-10" action="/therapist.html"  role="form">
+
+        <fieldset>
+          <!-- Form Name -->
+          <legend class="title-area">Therapist Signup</legend>
+
+
+        <!-- Text input-->
+        <div class="control-group">
+          <label class="control-label" for="name">Name</label>
+          <div class="controls">
+            <input id="name" name="name" type="text" placeholder="Full Name" class="input-xlarge form-control" required="">
+
+          </div>
+        </div>
+
+
+          <!-- Text input-->
+          <div class="control-group">
+            <label class="control-label" for="email">Email</label>
+            <div class="controls">
+              <input id="email" name="email" type="text" placeholder="Email" class="input-xlarge  form-control">
+
             </div>
-            <!-- Text input-->
-            <br />
-            <div class="control-group">
-              <label class="control-label" for="lastname">Last Name</label>
-              <div class="controls">
-                <input id="lastname" name="lastname" type="text" placeholder="placeholder" class="input-large" required>
-              </div>
-            </div>
-            <!-- Multiple Radios (inline) -->
-            <br />
-            <div class="control-group">
-              <label class="control-label" for="title">Title</label>
-              <div class="controls">
-                <label class="radio inline" for="title-0">
-                  <input type="radio" name="title" id="title-0" value="Mr." required>
-                  Mr.
-                </label>
-                <label class="radio inline" for="title-1">
-                  <input type="radio" name="title" id="title-1" value="Mrs.">
-                  Mrs.
-                </label>
-                <label class="radio inline" for="title-2">
-                  <input type="radio" name="title" id="title-2" value="Miss">
-                  Miss
-                </label>
-              </div>
-            </div>
+          </div>
+
+
             <!-- Multiple Radios (inline) -->
             <br />
             <div class="control-group">
@@ -131,8 +127,7 @@
             <!-- Button -->
             <br />
             <div class="control-group">
-              <label class="control-label" for="submit">Signup</label>
-              &nbsp;&nbsp;&nbsp;<button id="submit" name="submit" class="btn btn-primary" type="submit">Submit</button>
+              &nbsp;&nbsp;&nbsp;<button id="submit" name="submit" class="btn btn-lg btn-primary" type="submit">Sign Up &nbsp;<span class="glyphicon glyphicon-ok"></span></button>
             </div>
           </fieldset>
         </form>
