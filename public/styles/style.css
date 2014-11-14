@@ -23,6 +23,10 @@ Text Domain: THEMEUM
 	margin: 50px auto;
 }
 
+fieldset {
+    border: 0;
+}
+
 .blog #content article.post,
 .archive #content article.post{
 	margin-bottom: 60px;
@@ -549,7 +553,7 @@ a img.aligncenter {
 
 .widget ul li:hover  { background:#fafafa; }
 
-.widget ul li a:hover{ 
+.widget ul li a:hover{
 	color: #515151;
 	padding-left:6px;
 }
@@ -802,7 +806,7 @@ a img.aligncenter {
 }
 
 #navigation .navbar-nav li.menu-item-has-children ul.sub-menu{
-	visibility: hidden; 
+	visibility: hidden;
 	background: #F8F8F8;
 	border: 1px solid #E7E7E7;
 	border-top: 0;
@@ -822,7 +826,7 @@ a img.aligncenter {
 }
 
 #navigation .navbar-nav li.menu-item-has-children:hover ul.sub-menu{
-	visibility: visible; 
+	visibility: visible;
 }
 
 /* One Page Style */
