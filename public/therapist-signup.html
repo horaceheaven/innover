@@ -44,7 +44,7 @@
       <!--/#header-->
       <div class="page-fullwdth-content">
         <br /><br />
-        <form class="form-horizontal">
+        <form class="form-horizontal" action="/therapist.html">
           <fieldset>
             <!-- Form Name -->
             <legend class="title-area">Therapist Signup</legend>
@@ -69,7 +69,7 @@
               <label class="control-label" for="title">Title</label>
               <div class="controls">
                 <label class="radio inline" for="title-0">
-                  <input type="radio" name="title" id="title-0" value="Mr.">
+                  <input type="radio" name="title" id="title-0" value="Mr." required>
                   Mr.
                 </label>
                 <label class="radio inline" for="title-1">
@@ -88,7 +88,7 @@
               <label class="control-label" for="gender">Gender</label>
               <div class="controls">
                 <label class="radio inline" for="gender-0">
-                  <input type="radio" name="gender" id="gender-0" value="Male">
+                  <input type="radio" name="gender" id="gender-0" value="Male" required>
                   Male
                 </label>
                 <label class="radio inline" for="gender-1">
@@ -111,7 +111,7 @@
               <label class="control-label" for="orgsize">What is the size of your organization?</label>
               <div class="controls">
                 <label class="radio" for="orgsize-0">
-                  <input type="radio" name="orgsize" id="orgsize-0" value="I'm not with a organization or practice">
+                  <input type="radio" name="orgsize" id="orgsize-0" value="I'm not with a organization or practice" required>
                   I'm not with a organization or practice
                 </label>
                 <label class="radio" for="orgsize-1">
@@ -132,7 +132,7 @@
             <br />
             <div class="control-group">
               <label class="control-label" for="submit">Signup</label>
-              &nbsp;&nbsp;&nbsp;<button id="submit" name="submit" class="btn btn-primary">Submit</button>
+              &nbsp;&nbsp;&nbsp;<button id="submit" name="submit" class="btn btn-primary" type="submit">Submit</button>
             </div>
           </fieldset>
         </form>
