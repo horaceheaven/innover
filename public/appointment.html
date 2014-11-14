@@ -15,17 +15,6 @@
     <script type='text/javascript' src='components/jquery.js'></script>
     <script type='text/javascript' src='components/jquery-migrate.min.js'></script>
     <style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
-
-    <script type='text/javascript'>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-56753314-1', 'virtualtherapist.herokuapp.com');
-      ga('send', 'pageview');
-
-    </script>
   </head>
   <body class="page page-id-155 page-template-default">
     <div id="page" class="hfeed site">
@@ -56,66 +45,96 @@
       <!--/#header-->
       <div id="home-3" class="page-wrapper full-width light-bg" style="background-color:#ffffff">
         <div class="page-fullwdth-content">
-          <div id="slider">
-            <div id="carousel-main" class="carousel slide">
-              <div class="carousel-inner">
-                <div class="item active">
-                  <img width="1920" height="1024" src="img/therapist-slider-2.png" class="img-responsive wp-post-image" alt="slider-1" />
-                  <div class="carousel-caption">
 
-                    <div class="container">
-
-                      <h2>Connect to your Therapist<br />
-                        in the privacy of your home.
-                      </h2>
-
-                      <p class="lead">We'll provide you with an online hub for<br />
-                        counselling patients.
-                      </p>
 
                         <form class="form-horizontal">
 <fieldset>
 
 <!-- Form Name -->
-<legend>See a Therapist</legend>
+<legend>Schedule appointment</legend>
 
-<!-- Button (Double) -->
+<!-- Multiple Radios -->
 <div class="control-group">
-  <label class="control-label" for="button1id">Choose session type:</label>
+  <label class="control-label" for="preference"></label>
   <div class="controls">
-    <a id="button1id" class="btn btn-success" href="/virtual.html">Virtual</a>
-    <a id="button2id" name="button2id" class="btn btn-info" href="/physical.html">Physical/In person visit</a>
+    <label class="radio" for="preference-0">
+      <input type="radio" name="preference" id="preference-0" value="I would like to see a particular Doctor." checked="checked">
+      I would like to see a particular Doctor.
+    </label>
+    <label class="radio" for="preference-1">
+      <input type="radio" name="preference" id="preference-1" value="I have no preference. I want a session now.">
+      I have no preference. I want a session now.
+    </label>
   </div>
 </div>
+
+<!-- Select Basic -->
+<div class="control-group">
+  <label class="control-label" for="day">Select Day</label>
+  <div class="controls">
+    <select id="day" name="day" class="input-xlarge">
+      <option>Today</option>
+    </select>
+  </div>
+</div>
+
+<!-- Multiple Radios -->
+<div class="control-group">
+  <label class="control-label" for="times">Choose from available times:</label>
+  <div class="controls">
+    <label class="radio" for="times-0">
+      <input type="radio" name="times" id="times-0" value="1pm - 2pm" checked="checked">
+      1pm - 2pm
+    </label>
+    <label class="radio" for="times-1">
+      <input type="radio" name="times" id="times-1" value="2pm - 3pm">
+      2pm - 3pm
+    </label>
+    <label class="radio" for="times-2">
+      <input type="radio" name="times" id="times-2" value="3pm - 4pm">
+      3pm - 4pm
+    </label>
+    <label class="radio" for="times-3">
+      <input type="radio" name="times" id="times-3" value="4pm - 5pm">
+      4pm - 5pm
+    </label>
+    <label class="radio" for="times-4">
+      <input type="radio" name="times" id="times-4" value="5pm - 6pm">
+      5pm - 6pm
+    </label>
+    <label class="radio" for="times-5">
+      <input type="radio" name="times" id="times-5" value="6pm - 7pm">
+      6pm - 7pm
+    </label>
+    <label class="radio" for="times-6">
+      <input type="radio" name="times" id="times-6" value="7pm - 8pm">
+      7pm - 8pm
+    </label>
+    <label class="radio" for="times-7">
+      <input type="radio" name="times" id="times-7" value="8pm - 9pm">
+      8pm - 9pm
+    </label>
+    <label class="radio" for="times-8">
+      <input type="radio" name="times" id="times-8" value="4pm - 5pm">
+      4pm - 5pm
+    </label>
+    <label class="radio" for="times-9">
+      <input type="radio" name="times" id="times-9" value="10pm -11pm">
+      10pm -11pm
+    </label>
+  </div>
+</div>
+
+<a id="button1id" class="btn btn-success" href="/index.html">Schedule</a>
 
 </fieldset>
 </form>
 
-
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
         <!-- .page-fullwdth-content -->
       </div>
 
-      <div id="learnmore" class="page-wrapper full-width light-bg" style="background-color:#ffffff">
-        <div class="title-area">
-          <h2 class="title">Learn more</h2>
-          <p class="subtitle"></p>
-        </div>
-        <!-- .section-title -->
-        <div class="page-fullwdth-content">
-          <div id="recent-projects" class="portfolio clearfix">
 
-          </div>
-        </div>
-        <!-- .page-fullwdth-content -->
-      </div>
     </div>
     <script type='text/javascript' src='components/bootstrap/dist/js/bootstrap.min.js'></script>
     <script type='text/javascript' src='components/SmoothScroll.js'></script>

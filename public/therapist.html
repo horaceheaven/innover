@@ -15,17 +15,6 @@
     <script type='text/javascript' src='components/jquery.js'></script>
     <script type='text/javascript' src='components/jquery-migrate.min.js'></script>
     <style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
-
-    <script type='text/javascript'>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-56753314-1', 'virtualtherapist.herokuapp.com');
-      ga('send', 'pageview');
-
-    </script>
   </head>
   <body class="page page-id-155 page-template-default">
     <div id="page" class="hfeed site">
@@ -44,10 +33,9 @@
             </div>
             <div class="navbar-collapse collapse">
               <ul id="menu-main-menu" class="nav navbar-nav">
-                <li id="menu-item-183" class=" menu-item menu-item-type-post_type menu-item-object-page"><a href="#home-3">Home</a></li>
-                <li id="menu-item-190" class=" menu-item menu-item-type-post_type menu-item-object-page"><a href="/therapist.html">Are you a Therapist?</a></li>
-                <li id="menu-item-204" class=" menu-item menu-item-type-post_type menu-item-object-page"><a href="#team">Team</a></li>
-                </li>
+                <li id="menu-item-183" class=" menu-item menu-item-type-post_type menu-item-object-page"><a id="menu-item" href="/">Home</a></li>
+                <li id="menu-item-190" class=" menu-item menu-item-type-post_type menu-item-object-page"><a id="menu-item" href="/therapist.html">Are you a Therapist?</a></li>
+                <li id="menu-item-204" class=" menu-item menu-item-type-post_type menu-item-object-page"><a id="menu-item" href="#team">Team</a></li>
               </ul>
             </div>
           </div>
@@ -62,38 +50,16 @@
                 <div class="item active">
                   <img width="1920" height="1024" src="img/therapist-slider-2.png" class="img-responsive wp-post-image" alt="slider-1" />
                   <div class="carousel-caption">
-
                     <div class="container">
-
-                      <h2>Connect to your Therapist<br />
-                        in the privacy of your home.
+                      <h2>No facilities, No patients; <br />
+                        We'll provide them for you.
                       </h2>
-
                       <p class="lead">We'll provide you with an online hub for<br />
                         counselling patients.
                       </p>
-
-                        <form class="form-horizontal">
-<fieldset>
-
-<!-- Form Name -->
-<legend>See a Therapist</legend>
-
-<!-- Button (Double) -->
-<div class="control-group">
-  <label class="control-label" for="button1id">Choose session type:</label>
-  <div class="controls">
-    <a id="button1id" class="btn btn-success" href="/virtual.html">Virtual</a>
-    <a id="button2id" name="button2id" class="btn btn-info" href="/physical.html">Physical/In person visit</a>
-  </div>
-</div>
-
-</fieldset>
-</form>
-
-
+                      <a class="btn btn-success btn-lg" href="/therapist-signup.html">Signup</a>&nbsp;&nbsp;
+                      <a id="learnmore" class="btn btn-default btn-lg" href="#learnmore">Learn more</a>
                     </div>
-
                   </div>
                 </div>
               </div>
@@ -119,6 +85,7 @@
     </div>
     <script type='text/javascript' src='components/bootstrap/dist/js/bootstrap.min.js'></script>
     <script type='text/javascript' src='components/SmoothScroll.js'></script>
+    <script type='text/javascript' src='components/jquery.smooth-scroll.min.js'></script>
     <script type='text/javascript' src='components/jquery.scrollTo.js'></script>
     <script type='text/javascript' src='components/jquery.nav.js'></script>
     <script type='text/javascript' src='components/main.js'></script>
